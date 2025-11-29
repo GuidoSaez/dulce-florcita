@@ -1,0 +1,1058 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Variables CSS */
+
+:root {
+  --bg-color-principal: rgb(248, 246, 247);
+  --color-rosa-suave: rgb(255, 209, 220);
+  --color-titulos: rgb(0, 0, 0);
+  --color-texto: rgb(93, 93, 93);;
+  --color-rosa-fuerte:rgb(245, 138, 190);
+  --color-rosa-pastel:rgb(250, 218, 221);
+  --font-titulo: "Playfair Display", serif;
+  --font-text: "Outfit", sans-serif;
+}
+
+/* Estilos GENERALES */
+
+body {
+  margin: 0 2.7rem;
+  font-family: var(--font-text);
+  font-size: 14px;
+
+  background-color: var(--bg-color-principal);
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Estilos HEADER */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+
+  height: 5.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--color-texto);
+
+  background-color: var(--bg-color-principal);
+}
+
+.header__titulo {
+  font-family: var(--font-titulo);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: var(--font-titulo);
+}
+
+.header__titulo::before {
+  padding: 0 .3rem;
+  font-size: 1.25rem;
+  content: "💮";
+}
+
+.header__btn {
+  padding: 0 .3rem;
+  border: none;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+
+  color: var(--color-rosa-fuerte);
+  background-color: var(--bg-color-principal);
+}
+
+.header__nav {
+  display: none;
+}
+
+/* Estilos SIDEBAR */
+
+.sidebar {
+  position: fixed;
+  width: 100%;
+  top: 4rem;
+  left: 0;
+  z-index: 300;
+  outline: 2px solid var(--color-rosa-fuerte);
+
+  background-color: var(--bg-color-principal);
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0 0 0;
+  padding: 0;
+}
+
+.sidebar__item {
+  list-style: none;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sidebar__link {
+  text-decoration: none;
+}
+
+.sidebar__link span {
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  color: var(--color-texto);
+}
+
+.sidebar__icon {
+  padding: 0 .5rem;
+  font-size: 1.5rem;
+
+  color: var(--color-rosa-fuerte);
+}
+
+
+/* Estilos HOME */
+
+.home {
+  position: relative;
+
+  width: 100%;
+  height: 80vh;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+
+  background-color: #FFE4E6;
+  background-image: url(../assets/img/cupcake-3831130_640.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.home__filtro {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+  background-color: #000;
+  opacity: 25%;
+}
+
+.home__titulo {
+  z-index: 100;
+
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  font-size: 3rem;
+  text-shadow: 0 2px 0 #000;
+  text-align: center;
+  text-wrap: balance;
+
+  color: #fff;
+}
+
+.home__subtitulo {
+  z-index: 100;
+
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-wrap: balance;
+  text-align: center;
+  text-shadow: 0 2px 0 #000;
+
+  color: #fff;
+}
+
+.home__contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home__btn {
+  z-index: 100;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  border: 2px solid var(--color-rosa-fuerte);
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  background-color: var(--bg-color-principal);
+  color: #000;
+}
+
+.home__btn:hover {
+  background-color: var(--color-rosa-fuerte);
+  color: #fff;
+}
+
+.home__informacion {
+  font-size: .9rem;
+  text-wrap: wrap;
+  text-align: center;
+
+  color: var(--color-texto);
+}
+
+/* Estilos Productos */
+
+.seccion-productos {
+  margin-top: 5rem;
+}
+
+
+.seccion-productos__titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.seccion-productos__subtitulo {
+  font-size: 1.2rem;
+  text-align: center;
+  text-wrap: balance;
+
+  color: var(--color-texto);
+}
+
+.seccion-productos__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 17rem;
+  min-height: 30rem;
+  outline: 2px solid #aaa;
+  border-radius: 14px;
+}
+
+.producto__img {
+  width: 92%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 1rem 0 0 0;
+}
+
+.producto__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.producto__nombre {
+  margin: .5rem 0;
+  padding: 0 .5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.producto__descripcion {
+  padding: .5rem .5rem;
+  margin: 0;
+
+  text-wrap: balance;
+  text-align: center;
+
+  color: var(--color-texto);
+}
+
+.producto__btn {
+  margin: .6rem auto;
+  padding: .6rem 4.5rem;
+  border-radius: 20px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  color: #000;
+  background-color: var(--color-rosa-pastel);
+}
+
+.producto__btn:hover {
+  background-color: var(--bg-color-principal);
+  color: var(--color-rosa-fuerte);
+  outline: 2px solid var(--color-rosa-fuerte);
+}
+
+/* Estilos Pedidos */
+
+.seccion-pedidos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.seccion-pedidos__titulo {
+  margin: 0 0 5rem 0;
+
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pedidos__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.card {
+  width: 13rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 2px solid var(--color-rosa-fuerte);
+
+  background-color: var(--color-rosa-pastel);
+}
+
+.pedidos__icono {
+  font-size: 1.8rem;
+  text-align: center;
+
+  color: var(--color-rosa-fuerte);
+}
+
+.pedidos__titulo {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.pedidos__descripcion {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-texto);
+}
+.pedidos__btn {
+  padding: .7rem 1.9rem;
+  border-radius: 15px;
+  margin-top: 8rem;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+
+  color: #fff;
+  background-color: var(--color-rosa-fuerte);
+}
+
+.pedidos__btn:hover {
+  background-color: var(--bg-color-principal);
+  color: var(--color-rosa-fuerte);
+  outline: 2px solid var(--color-rosa-fuerte);
+}
+
+/* Seccion Quienes Somos */
+
+.seccion-quienes-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 10rem;
+}
+
+.quienes-somos__contenedor--img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.quienes-somos__contenedor--informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quienes-somos__img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.quienes-somos__titulo {
+  padding: .5rem;
+
+  font-family: var(--font-titulo);
+  font-size: 2.5rem;
+  text-align: center;
+  text-wrap: balance;
+
+  color: var(--color-rosa-fuerte);
+}
+
+.quienes-somos__subtitulo {
+  padding: .5rem;
+
+  font-family: var(--font-titulo);
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-wrap: balance;
+  text-align: center;
+
+  color: var(--color-titulos);
+}
+
+.quienes-somos__descripcion {
+  padding: .5rem;
+
+  font-size: 1rem;
+  text-align: center;
+  text-wrap: balance;
+  margin: 0;
+
+  color: var(--color-texto);
+}
+
+.quienes-somos__btn {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  background-color: var(--color-rosa-fuerte);
+  color: #fff;
+}
+
+.quienes-somos__btn:hover {
+  background-color: var(--bg-color-principal);
+  color: var(--color-rosa-fuerte);
+  outline: 2px solid var(--color-rosa-fuerte);
+}
+
+/* Seccion Contacto */
+
+.seccion-contacto{
+  margin-top: 7rem;
+}
+
+.contacto__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contacto__card {
+  width: 12rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto__titulo {
+  font-size: 2rem;
+}
+
+.contacto__descripcion {
+  font-size: 1.1rem;
+}
+
+.contacto__descripcion--telefono::before {
+  padding-right: .5rem;
+
+  content: "\f095";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1rem;
+
+  color: var(--color-rosa-fuerte);
+}
+
+.contacto__descripcion--ubicacion::before {
+  padding-right: .5rem;
+  content: "\f3c5";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1rem;
+
+  color: var(--color-rosa-fuerte);
+}
+
+.contacto__contenedor--redes {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.contacto__iconos {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: var(--color-rosa-fuerte);
+}
+
+.contacto__card--nombre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-titulo {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  color: var(--color-rosa-fuerte);
+}
+
+.contacto-subtitulo {
+  font-size: 1.1rem;
+  text-align: center;
+
+  color: var(--color-texto);
+}
+
+/* Footer */
+
+.footer {
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--color-texto);
+}
+
+
+
+/* <------------------ MEDIA QUERIES --------------------------> */
+
+@media (min-width: 576px) {
+
+  /* HEADER */
+
+  .header__titulo {
+    font-size: 1.7rem;
+  }
+
+  .header__titulo::before {
+    font-size: 1.5rem;
+  }
+
+  .header__btn {
+    font-size: 1.7rem;
+  }
+
+  /* HOME */
+
+  .home__titulo {
+    font-size: 4rem;
+  }
+
+  .home__subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .home__contenedor {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+
+  .home__informacion {
+    font-size: 1rem;
+  }
+
+  /* Seccion Pedidos */
+
+  .seccion-pedidos__titulo {
+    font-size: 2.5rem;
+  }
+
+  .pedidos__btn {
+    padding: .8rem 2rem;
+  }
+
+  .quienes-somos__titulo {
+    font-size: 3rem;
+  }
+
+  .quienes-somos__subtitulo {
+    font-size: 1.25rem;
+  }
+
+  .quienes-somos__descripcion {
+    font-size: 1.1rem;
+  }
+
+  /* Seccion Contacto */
+
+  .contacto-titulo {
+    font-size: 3rem;
+  }
+
+  .contacto-subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* HEADER */
+
+  body {
+    margin: 0 4rem;
+
+    font-size: 16px;
+  }
+
+  .header {
+    height: 6vh;
+  }
+
+  .header__titulo {
+    font-size: 1.3rem;
+  }
+
+  .header__titulo::before {
+    padding: 0 .4rem;
+
+    font-size: 1.3rem;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__nav {
+    display: block;
+  }
+
+  .header__lista {
+    display: flex;
+    list-style: none;
+  }
+
+  .header__link {
+    padding: 0 .4rem;
+
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    color: var(--font-titulo);
+  }
+
+  .header__link:hover {
+    color: var(--color-rosa-fuerte);
+  }
+
+  /* HOME */
+
+  .home__titulo {
+    font-size: 4rem;
+  }
+
+  .home__subtitulo {
+    font-size: 1.4rem;
+  }
+
+  .home__contenedor {
+    gap: 6rem;
+  }
+
+  .home__informacion {
+    font-size: 1.1rem;
+  }
+
+  /* Sidebar */
+
+  .sidebar {
+    display: none;
+  }
+
+  /* Estilos Productos */
+
+  .seccion-productos__titulo {
+    font-size: 2.2rem;
+  }
+
+  .seccion-productos__subtitulo {
+    font-size: 1.4rem;
+  }
+
+  .seccion-productos__contenedor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 4rem 0;
+  }
+
+  /* Seccion Pedidos */
+
+  .seccion-pedidos__titulo {
+    font-size: 2.5rem;
+  }
+
+  /* Seccion Quienes Somos */
+
+  .quienes-somos__titulo {
+    font-size: 2.4rem;
+  }
+
+  .quienes-somos__subtitulo {
+    font-size: 1.4rem;
+  }
+
+  .quienes-somos__descripcion {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* HEADER */
+
+  body {
+    margin: 0 5.5rem;
+  }
+
+  .header__titulo {
+    font-size: 1.3rem;
+  }
+
+  .header__titulo::before {
+    padding: 0 .4rem;
+
+    font-size: 1.3rem;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__link {
+    padding: 0 .4rem;
+
+    font-size: .8rem;
+  }
+
+  /* HOME */
+
+  .home__titulo {
+    font-size: 5rem;
+  }
+
+  .home__subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .home__contenedor {
+    gap: 10rem;
+  }
+
+  .home__informacion {
+    font-size: 1.2rem;
+  }
+
+  /* Estilo Productos */
+
+  .seccion-productos__titulo {
+    font-size: 2.5rem;
+  }
+
+  .seccion-productos__subtitulo {
+    font-size: 1.5rem;
+  }
+
+  /* Seccion Pedidos */
+
+  .seccion-pedidos__titulo {
+    font-size: 2.8rem;
+  }
+
+  /* Seccion Quienes Somos */
+
+  .quienes-somos__titulo {
+    font-size: 2.5rem;
+  }
+
+  .quienes-somos__subtitulo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    width: 85%;
+  }
+
+  /* HEADER */
+
+  body {
+    margin: 0 7rem;
+  }
+
+  .header__titulo {
+    font-size: 1.8rem;
+  }
+
+  .header__titulo::before {
+    padding: 0 .4rem;
+
+    font-size: 1.8rem;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__link {
+    padding: 0 .5rem;
+
+    font-size: .95rem;
+  }
+
+  /* HOME */
+
+  .home__titulo {
+    font-size: 5.5rem;
+  }
+
+  .home__subtitulo {
+    font-size: 1.6rem;
+  }
+
+  .home__contenedor {
+    gap: 15rem;
+  }
+
+  .home__informacion {
+    font-size: 1.2rem;
+  }
+
+  /* Estilo Productos */
+
+  .seccion-productos__titulo {
+    font-size: 2.6rem;
+  }
+
+  .seccion-productos__subtitulo {
+    font-size: 1.5rem;
+  }
+
+  /* Seccion Pedidos */
+
+  .seccion-pedidos__titulo {
+    font-size: 2.6rem;
+  }
+
+  .pedidos__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  /* Seccion Quienes Somos */
+
+  .seccion-quienes-somos {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quienes-somos__contenedor--img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .quienes-somos__contenedor--informacion {
+    width: 40%;
+  }
+
+  .quienes-somos__descripcion {
+    padding: .5rem 2rem;
+  }
+
+  .quienes-somos__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Seccion Contacto */
+
+  .seccion-contacto {
+    margin-top: 15rem;
+  }
+
+  .contacto__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contacto__card {
+    width: 20rem;
+  }
+
+  .contacto__contenedor--redes {
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  /* HEADER */
+
+  body {
+    margin: 0 8rem;
+  }
+
+  .header__titulo {
+    font-size: 2rem;
+  }
+
+  .header__titulo::before {
+    padding: 0 .5rem;
+
+    font-size: 2rem;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__link {
+    padding: 0 .6rem;
+
+    font-size: 1.1rem;
+  }
+
+   /* HOME */
+
+  .home__titulo {
+    font-size: 7rem;
+    letter-spacing: .2rem;
+  }
+
+  .home__subtitulo {
+    font-size: 1.8rem;
+  }
+
+  .home__contenedor {
+    gap: 15rem;
+  }
+
+  .home__btn {
+    padding: 1.2rem 2.5rem;
+  }
+
+  .home__informacion {
+    font-size: 1.2rem;
+  }
+
+  /* Seccion Pedidos */
+
+  .pedidos__contenedor {
+    gap: 10rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .home__titulo {
+    font-size: 7.5rem;
+    letter-spacing: .2rem;
+  }
+
+  .home__subtitulo {
+    font-size: 1.9rem;
+  }
+
+  .home__contenedor {
+    gap: 15rem;
+  }
+
+  .home__btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  .home__informacion {
+    font-size: 1.25rem;
+  }
+
+  /* Estilos Productos */
+
+  .seccion-productos {
+    margin: 10rem 0;
+  }
+
+  .seccion-productos__subtitulo {
+    margin-bottom: 4rem;
+  }
+
+  .seccion-productos__contenedor {
+    width: 80%;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  /* Seccion Pedidos */
+
+  .pedidos__contenedor {
+    gap: 15rem;
+  }
+}
+

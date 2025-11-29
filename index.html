@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Guido Saez">
+  <meta name="description"
+    content="Bienvenido a Dulce Florcita, descubre los mejores postres y repostería de Rosario. ¡Haz tu pedido y endulza tu día!">
+  <link rel="icon" sizes="64x64" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-apple.png">
+  <title>Dulce Florcita - Repostería y Postres Artesanales en Rosario</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/0ae76a4de7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#home" class="header__titulo">Dulce Florcita</a>
+    <button id="header__btn" type="button" class="header__btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="header__nav">
+      <ul class="header__lista">
+        <li class="header__item">
+          <a href="#productos" class="header__link">Nuestras Creaciones</a>
+        </li>
+        <li class="header__item">
+          <a href="#pedidos" class="header__link">¿Cómo Comprar?</a>
+        </li>
+        <li class="header__item">
+          <a href="#quienes-somos" class="header__link">Nuestra Historia</a>
+        </li>
+        <li class="header__item">
+          <a href="#contacto" class="header__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="sidebar" class="sidebar">
+      <nav class="sidebar__nav">
+        <ul class="sidebar__menu">
+          <li class="sidebar__item">
+            <a href="#productos" class="sidebar__link">
+              <i class="fa-solid fa-cake-candles sidebar__icon"></i>
+              <span>Nuestras Creaciones</span>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#pedidos" class="sidebar__link">
+              <i class="fa-solid fa-cart-shopping sidebar__icon"></i>
+              <span>¿Cómo Comprar?</span>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#quienes-somos" class="sidebar__link">
+              <i class="fa-solid fa-user sidebar__icon"></i>
+              <span>Nuestra Historia</span>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#contacto" class="sidebar__link">
+              <i class="fa-solid fa-phone sidebar__icon"></i>
+              <span>Contacto</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section id="home" class="home">
+      <div class="home__filtro"></div>
+      <h1 class="home__titulo">Dulce Florcita</h1>
+      <h2 class="home__subtitulo">Postres y repostería artesanal hechos con amor</h2> <!-- Colorcar seccion-home -->
+      <div class="home__contenedor">
+        <a href="#productos" class="home__btn">Ver productos</a>
+        <a href="https://wa.me/5493416854527?text=Hola%20Dulce%20Florcita!%20Me%20gustar%C3%ADa%20hacer%20una%20consulta%20o%20un%20pedido"
+          class="home__btn" target="_blank">Hacé tu
+          pedido</a>
+      </div>
+      <small class="home__informacion">Pedidos con 48hs de anticipación</small>
+    </section>
+    <section id="productos" class="seccion-productos">
+      <h2 class="seccion-productos__titulo">Nuestras Creaciones</h2>
+      <p class="seccion-productos__subtitulo">Delicias hechas con amor</p>
+      <div class="seccion-productos__contenedor">
+        <div class="producto">
+          <img class="producto__img" src="assets/img/lemon-pie_postre.jpeg" alt="Foto de Lemon Pie">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Postre Lemon Pie</h3>
+            <p class="producto__descripcion">Nuestra versión del Lemon pie hecho en postre: base de galletitas
+              trituradas, un relleno de intensa y refrescante crema de limón, coronado por un merengue tan suave como
+              una nube </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentó%20el%20postre%20Lemon%20pie%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">Consultar</a>
+          </div>
+        </div>
+        <div class="producto">
+          <img class="producto__img" src="assets/img/chocotorta_postre.jpeg" alt="Foto de Chocotorta">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Postre Chocotorta</h3>
+            <p class="producto__descripcion">El postre nacional más amado: Capas perfectas de galletitas de chocolate
+              bañadas en café intercaladas con nuestra cremosa mezcla de dulce de leche y queso. Un clásico artesanal
+            </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentó%20el%20postre%20Chocotorta%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">Consultar</a>
+          </div>
+        </div>
+        <div class=" producto">
+          <img class="producto__img" src="assets/img/postre-oreo.jpeg" alt="Foto de postre oreo">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Postre Choco Oreo</h3>
+            <p class="producto__descripcion">Explosión de sabor y textura. Una base crocante de galletitas Oreo, con
+              capas generosas de mousse de chocolate y crema suave, coronado con abundantes trozos de Oreo. Ideal para
+              compartir (o no)
+            </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentó%20el%20postre%20Chocotorta%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">Consultar
+            </a>
+          </div>
+        </div>
+        <div class=" producto">
+          <img class="producto__img" src="assets/img/budin-chocolate.jpeg" alt="Foto de budín de chocolate">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Budín de chocolate</h3>
+            <p class="producto__descripcion">Simple, pero perfecto. Budín casero, esponjoso y profundamente húmedo, con
+              la intensidad de nuestro mejor cacao. Ideal para la hora del café o mate.
+            </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentó%20el%20Budín%20de %20chocolate%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">Consultar</a>
+          </div>
+        </div>
+        <div class=" producto">
+          <img class="producto__img" src="assets/img/pastafrolita.jpeg" alt="Foto de una Pastafrola">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Mini Pastafrola</h3>
+            <p class="producto__descripcion">El clásico de la abuela, en su tamaño perfecto. Masa sable artesanal
+              delicadamente rellena con dulce de membrillo de alta calidad y el enrejado característico
+            </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentó%20la%20pastafrolita%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">Consultar
+            </a>
+          </div>
+        </div>
+        <div class=" producto">
+          <img class="producto__img" src="assets/img/alfajores-chocolate.jpeg" alt="Foto de alfajor de chocolates">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Alfajores de chocolate</h3>
+            <p class="producto__descripcion">El clásico placer argentino. Dos tapas de cacao, rellenas con una capa
+              generosa de dulce de leche, y bañadas en una exquisita cobertura de chocolate semi-amargo
+            </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentó%20los%20alfajores%20de%20chocolate%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">Consultar</a>
+          </div>
+        </div>
+        <div class=" producto">
+          <img class="producto__img" src="assets/img/alfajor-maicena.jpeg" alt="Foto de alfajor de maicena">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Alfajores de maicena</h3>
+            <p class="producto__descripcion">El sabor de lo clásico y casero. Dos tapas de masa de maicena que se
+              deshacen en la boca, con un abundante relleno de dulce de leche y bordes cubiertos en coco rallado. La
+              textura perfecta
+            </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentaron%20los%20alfajores%20de%20maicena%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">
+              Consultar
+            </a>
+          </div>
+        </div>
+        <div class=" producto">
+          <img class="producto__img" src="assets/img/lemonpie.jpeg" alt="Foto de lemon pie">
+          <div class="producto__contenedor">
+            <h3 class="producto__nombre">Lemon Pie</h3>
+            <p class="producto__descripcion">Nuestra versión del Lemon Pie: masa quebrada, un relleno de intensa y
+              refrescante crema de limón, coronado por un merengue tan suave como una nube
+            </p>
+            <a class="producto__btn"
+              href="https://wa.me/5493416854527?text=Hola!%20Me%20tentó%20el%20Lemon%20pie%20que%20vi%20en%20la%20web.%20Quisiera%20saber%20el%20precio."
+              target="_blank">Consultar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id=" pedidos" class="seccion-pedidos">
+      <h2 class="seccion-pedidos__titulo">Cómo hacer tu pedido</h2>
+      <div class="pedidos__contenedor">
+        <div class="card">
+          <i class="fa-solid fa-location-dot pedidos__icono"></i>
+          <p class="pedidos__titulo"><strong>Zona de Retiro</strong></p>
+          <p class="pedidos__descripcion">Retira nuestros pedidos por nuestro domicilio</p>
+          <!-- Falta -->
+        </div>
+        <div class="card">
+          <i class="fa-regular fa-credit-card pedidos__icono"></i>
+          <p class="pedidos__titulo"><strong>Métodos de Pago</strong></p>
+          <p class="pedidos__descripcion">Aceptamos efectivo y transferencia bancaria
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-lock pedidos__icono"></i>
+          <p class="pedidos__titulo"><strong>Importante: Seña</strong></p>
+          <p class="pedidos__descripcion">Se requiere una seña del 50% para confirmar
+            tu pedido</p> <!-- Falta -->
+        </div>
+      </div>
+      <a class="pedidos__btn"
+        href="https://wa.me/5493416854527?text=Hola%20Dulce%20Florcita!%20Me%20gustar%C3%ADa%20hacer%20una%20consulta%20o%20un%20pedido">
+        <i class="fa-brands fa-whatsapp"></i>
+        Hacé tu pedido
+      </a>
+    </section>
+    <section id="quienes-somos" class="seccion-quienes-somos">
+      <div class="quienes-somos__contenedor--img">
+        <img class="quienes-somos__img" src="assets/img/quienes-somos__foto.jpeg"
+          alt="Foto de FLorencia y Adriana. Fundadoras de Dulce FLorcita">
+      </div>
+      <div class="quienes-somos__contenedor--informacion">
+        <h2 class="quienes-somos__titulo">Detrás de Cada Bocado</h2>
+        <p class="quienes-somos__subtitulo">Ingredientes selectos y dedicación en cada detalle</p>
+        <p class="quienes-somos__descripcion">
+          Hola 👋🏻<br>
+          Les cuento un poquito sobre nosotras. Soy Popy Daffara y detrás de este emprendimiento estoy yo, junto con mi
+          mamá Adriana. Desde chica crecí viendo a mi mamá hacer cosas dulces y siempre me encantó; hoy, ya de grande,
+          seguimos compartiendo esa misma pasión, y qué mejor que hacerlo juntas.
+        </p>
+        <p class="quienes-somos__descripcion">
+          En plena pandemia decidimos animarnos y empezar a vender nuestras preparaciones. Por motivos laborales tuve
+          que dejarlo por un tiempo, pero después de varios años volvimos a retomarlo con más ganas que nunca.
+        </p>
+        <p class="quienes-somos__descripcion">
+          El nombre del emprendimiento nació porque mis abuelas siempre me decían “Florcita” 🌸. Elegí este nombre
+          pensando en ellas y en todo el amor que me transmitieron ❤️.
+        </p>
+        <a class="quienes-somos__btn" href="#productos">Ver nuestros productos</a>
+      </div>
+    </section>
+    <section id="contacto" class="seccion-contacto">
+      <div class="contacto__contenedor">
+        <div class="contacto__card contacto__card--contacto">
+          <p><strong class="contacto__titulo">Contacto</strong></p>
+          <p class="contacto__descripcion contacto__descripcion--telefono">341 - 6854527</p>
+          <p class="contacto__descripcion contacto__descripcion--ubicacion">Bella Vista, Rosario</p>
+        </div>
+        <div class="contacto__card contacto__card--redes">
+          <p><strong class="contacto__titulo">Síguenos</strong></p>
+          <div class="contacto__contenedor--redes">
+            <a href="https://www.instagram.com/_dulceflorcita/" target="_blank"><i
+                class="fa-brands fa-instagram contacto__iconos"></i></a>
+            <a href="https://www.tiktok.com/@_dulceflorcita?_r=1&_t=ZS-91jBvPlDHRR" target="_blank"><i
+                class="fa-brands fa-tiktok contacto__iconos"></i></a>
+          </div>
+        </div>
+        <div class="contacto__card contacto__card--nombre">
+          <p><strong class="contacto__titulo contacto-titulo">Dulce Florcita</strong></p>
+          <p class="contacto__descripcion contacto-subtitulo">Repostería y postres artesanales</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="footer">&copy; 2025 Dulce Florcita. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
